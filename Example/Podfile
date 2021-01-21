@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'CYAutoRectView_Example' do
+  pod 'CYAutoRectView', :path => '../'
+
+  target 'CYAutoRectView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
