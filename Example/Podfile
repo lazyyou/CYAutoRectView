@@ -8,6 +8,5 @@ target 'CYAutoRectView_Example' do
   target 'CYAutoRectView_Tests' do
     inherit! :search_paths
 
-    
   end
 end

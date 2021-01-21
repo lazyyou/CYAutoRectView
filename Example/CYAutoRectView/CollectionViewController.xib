@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionViewController" customModule="CYAutoRectView_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Wg7-Mw-WlT" id="C5z-xg-Zen"/>
+                <outlet property="view" destination="iN0-l3-epB" id="zVM-CH-hUr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsF-JQ-6Me">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gYW-oS-Vsr">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuq-vx-EJ5">
+                                    <rect key="frame" x="0.0" y="0.0" width="207" height="50"/>
+                                    <state key="normal" title="加"/>
+                                    <connections>
+                                        <action selector="add" destination="-1" eventType="touchUpInside" id="8Xx-nX-UdK"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN8-tK-YIB">
+                                    <rect key="frame" x="207" y="0.0" width="207" height="50"/>
+                                    <state key="normal" title="减"/>
+                                    <connections>
+                                        <action selector="cut" destination="-1" eventType="touchUpInside" id="BhC-5E-5CU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gYW-oS-Vsr" secondAttribute="trailing" id="7oA-yZ-BI0"/>
+                        <constraint firstAttribute="bottom" secondItem="gYW-oS-Vsr" secondAttribute="bottom" id="Hdg-ae-KVi"/>
+                        <constraint firstItem="gYW-oS-Vsr" firstAttribute="leading" secondItem="fsF-JQ-6Me" secondAttribute="leading" id="Tkm-y5-Bq2"/>
+                        <constraint firstAttribute="height" constant="50" id="Zz0-Y8-TdF"/>
+                        <constraint firstItem="gYW-oS-Vsr" firstAttribute="top" secondItem="fsF-JQ-6Me" secondAttribute="top" id="ck2-wM-xML"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Wg7-Mw-WlT" customClass="CYAutoRectCollectionView" customModule="CYAutoRectView">
+                    <rect key="frame" x="0.0" y="94" width="414" height="0.0"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H7L-FO-KyQ">
+                        <size key="itemSize" width="80" height="80"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kfZ-sp-2yj"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fsF-JQ-6Me" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="03n-El-H4Y"/>
+                <constraint firstItem="fsF-JQ-6Me" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="IVR-Rt-YYG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wg7-Mw-WlT" secondAttribute="trailing" id="JLy-Rn-8hJ"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Wg7-Mw-WlT" secondAttribute="bottom" id="OZf-mq-3o2"/>
+                <constraint firstItem="Wg7-Mw-WlT" firstAttribute="top" secondItem="fsF-JQ-6Me" secondAttribute="bottom" id="U0d-qP-6cq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fsF-JQ-6Me" secondAttribute="trailing" id="kjF-Kd-R36"/>
+                <constraint firstItem="Wg7-Mw-WlT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vvR-VX-4CT"/>
+            </constraints>
+            <point key="canvasLocation" x="106" y="93"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Wg7-Mw-WlT">
+            <size key="intrinsicContentSize" width="414" height="0.0"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

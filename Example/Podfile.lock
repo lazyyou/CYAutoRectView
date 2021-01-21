@@ -1,0 +1,16 @@
+PODS:
+  - CYAutoRectView (0.1.0)
+
+DEPENDENCIES:
+  - CYAutoRectView (from `../`)
+
+EXTERNAL SOURCES:
+  CYAutoRectView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CYAutoRectView: 918979a73dd518a166ac43d0a24ace8f3f58063f
+
+PODFILE CHECKSUM: 9506029522dbc50f1a1dc2fe8051619a1d56e33c
+
+COCOAPODS: 1.10.0
