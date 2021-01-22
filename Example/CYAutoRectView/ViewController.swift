@@ -18,7 +18,7 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -27,6 +27,8 @@ class ViewController: UITableViewController {
         case 0:
             cell.textLabel?.text = "CYAutoRectCollectionView"
         case 1:
+            cell.textLabel?.text = "CYAutoRectTableView"
+        case 2:
             cell.textLabel?.text = "CYAutoRectImageView"
         default:
             cell.textLabel?.text = "CYAutoRectTextView"
@@ -40,6 +42,9 @@ class ViewController: UITableViewController {
             let nextVC = CollectionViewController()
             self.navigationController?.pushViewController(nextVC, animated: true)
         case 1:
+            let nextVC = TableViewController()
+            self.navigationController?.pushViewController(nextVC, animated: true)
+        case 2:
             let nextVC = ImageViewController()
             self.navigationController?.pushViewController(nextVC, animated: true)
         default:

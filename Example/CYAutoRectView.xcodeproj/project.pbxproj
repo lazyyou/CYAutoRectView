@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C529BC225BA63A60007E60E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C529BC025BA63A60007E60E /* TableViewController.swift */; };
+		0C529BC325BA63A60007E60E /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C529BC125BA63A60007E60E /* TableViewController.xib */; };
 		0C89CAB125B956120069C79B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C89CAAF25B956120069C79B /* ImageViewController.swift */; };
 		0C89CAB225B956120069C79B /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C89CAB025B956120069C79B /* ImageViewController.xib */; };
 		0C89CACB25B960CB0069C79B /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C89CAC925B960CB0069C79B /* TextViewController.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C529BC025BA63A60007E60E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0C529BC125BA63A60007E60E /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		0C89CAAF25B956120069C79B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		0C89CAB025B956120069C79B /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 		0C89CAC925B960CB0069C79B /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				0C89CAD525B970E00069C79B /* CollectionViewController.swift */,
 				0C89CADB25B971690069C79B /* CollectionViewController.xib */,
+				0C529BC025BA63A60007E60E /* TableViewController.swift */,
+				0C529BC125BA63A60007E60E /* TableViewController.xib */,
 				0C89CAAF25B956120069C79B /* ImageViewController.swift */,
 				0C89CAB025B956120069C79B /* ImageViewController.xib */,
 				0C89CAC925B960CB0069C79B /* TextViewController.swift */,
@@ -264,6 +270,7 @@
 				0C89CACC25B960CB0069C79B /* TextViewController.xib in Resources */,
 				0C89CADC25B971690069C79B /* CollectionViewController.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				0C529BC325BA63A60007E60E /* TableViewController.xib in Resources */,
 				0C89CAB225B956120069C79B /* ImageViewController.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -349,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				0C529BC225BA63A60007E60E /* TableViewController.swift in Sources */,
 				0C89CAB125B956120069C79B /* ImageViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				0C89CACB25B960CB0069C79B /* TextViewController.swift in Sources */,

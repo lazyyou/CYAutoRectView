@@ -37,6 +37,7 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource {
         return cell
     }
     
+    // MARK:-
     @IBAction
     func add() -> Void {
         self.count += 1

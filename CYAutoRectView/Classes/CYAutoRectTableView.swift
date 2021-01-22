@@ -1,21 +1,15 @@
 //
-//  CYAutoRectCollectionView.swift
+//  CYAutoRectTableView.swift
 //  CYAutoRectView
 //
-//  Created by Podinn on 2021/1/21.
+//  Created by Podinn on 2021/1/22.
 //
 
 import UIKit
 
 @objc
-public enum CYAutoRectType: Int {
-    case width = 0
-    case height = 1
-}
-
-@objc
 @IBDesignable
-public class CYAutoRectCollectionView: UICollectionView {
+public class CYAutoRectTableView: UITableView {
 
     public var autoRectType: CYAutoRectType = .height
     
@@ -33,8 +27,8 @@ public class CYAutoRectCollectionView: UICollectionView {
         self.removeObserver(self, forKeyPath: "contentSize")
     }
     
-    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
-        super.init(frame: frame, collectionViewLayout: layout)
+    public override init(frame: CGRect, style: UITableView.Style) {
+        super.init(frame: frame, style: style)
         
         setup()
     }

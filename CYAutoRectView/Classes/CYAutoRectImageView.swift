@@ -7,16 +7,11 @@
 
 import UIKit
 
+@objc
 @IBDesignable
 public class CYAutoRectImageView: UIImageView {
-
-    @objc
-    public enum AutoRectType: Int {
-        case width = 0
-        case height = 1
-    }
     
-    public var autoRectType: AutoRectType = .width
+    public var autoRectType: CYAutoRectType = .width
     
     @IBInspectable
     var _autoRectType: Int {
@@ -24,7 +19,7 @@ public class CYAutoRectImageView: UIImageView {
             return autoRectType.rawValue
         }
         set(type) {
-            autoRectType = AutoRectType(rawValue: type) ?? .width
+            autoRectType = CYAutoRectType(rawValue: type) ?? .width
         }
     }
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+@_exported import CYAutoRectView
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

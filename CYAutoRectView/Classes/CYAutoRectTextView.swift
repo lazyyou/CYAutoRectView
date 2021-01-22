@@ -7,6 +7,7 @@
 
 import UIKit
 
+@objc
 @IBDesignable
 public class CYAutoRectTextView: UITextView {
 
